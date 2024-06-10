@@ -91,6 +91,7 @@ public final class test
 		ValuesEmulator.put(pipeline, "output", result);
 		} catch (Exception e) {
 		e.printStackTrace();
+		ValuesEmulator.put(pipeline, "error", "ERROR OCCURRED " + e.getLocalizedMessage());
 		}
 		// --- <<IS-END>> ---
 
