@@ -40,6 +40,7 @@ public final class test
 		// [i] field:0:required connectionEnabled
 		// [i] field:0:required connectionAlias
 		// [i] field:0:required pwdVal
+		// [o] field:0:required output
 		String AGENT_ID = "agentId";
 		String AGENT_GROUP = "agentGroup";
 		String ASSET_TYPE = "assetType";
@@ -87,6 +88,7 @@ public final class test
 		IData result = Service.doInvoke(serviceNS, inputMap.getIData());
 		System.out.println(
 		"Invocation of wm.client.scaffolding.assets:updateAssetInManifest successful response: " + result);
+		ValuesEmulator.put(pipeline, "output", result);
 		} catch (Exception e) {
 		e.printStackTrace();
 		}
