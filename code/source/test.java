@@ -51,7 +51,7 @@ public final class test
 		String CONNECTION_ALIAS = "connectionAlias";
 		String CONNECTION_CONFIGURATION = "connectionconfiguration";
 		String PWDKEY = "cr..password";
-		String pwdVal = "pwd";
+		String pwdVal = "pwdVal";
 		
 		String agentID = ValuesEmulator.getString(pipeline, AGENT_ID);
 		String agentGroup = ValuesEmulator.getString(pipeline, AGENT_GROUP);
