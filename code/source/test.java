@@ -83,8 +83,15 @@ public final class test
 		
 		NSName serviceNS = NSName.create("wm.client.scaffolding.assets:updateAssetInManifest");
 		try {
-		System.out.println(
-		"Invoking wm.client.scaffolding.assets:updateAssetInManifest with input: " + inputMap.getIData());
+		String msg = "Invoking wm.client.scaffolding.assets:updateAssetInManifest with input new: " + inputMap.getIData();
+		System.out.println(msg);
+		
+		IDataMap logInputMap = new IDataMap();
+		logInputMap.put("connectorID", "DEMO");
+		logInputMap.put("message", msg);
+		
+		Service.doInvoke(NSName.create("wm.cloudstreams.service.util.runtime:log"), logInputMap.getIData());
+		
 		IData result = Service.doInvoke(serviceNS, inputMap.getIData());
 		System.out.println(
 		"Invocation of wm.client.scaffolding.assets:updateAssetInManifest successful response: " + result);
