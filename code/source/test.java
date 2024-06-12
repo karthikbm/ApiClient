@@ -49,7 +49,7 @@ public final class test
 		String PACKAGE_NAME = "packageName";
 		String CONNECTION_ENABLED = "connectionEnabled";
 		String CONNECTION_ALIAS = "connectionAlias";
-		String CONNECTION_CONFIGURATION = "connectionconfiguration";
+		//		String CONNECTION_CONFIGURATION = "connectionconfiguration";
 		String PWDKEY = "cr..password";
 		String pwdVal = "pwdVal";
 		
