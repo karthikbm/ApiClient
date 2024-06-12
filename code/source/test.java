@@ -63,15 +63,15 @@ public final class test
 		String connAlias = ValuesEmulator.getString(pipeline, CONNECTION_ALIAS);
 		String pwdValStr = ValuesEmulator.getString(pipeline, pwdVal);
 		
-		IDataMap connConfigMap = new IDataMap();
-		connConfigMap.put(PWDKEY, pwdValStr);
+		//		IDataMap connConfigMap = new IDataMap();
+		//		connConfigMap.put(PWDKEY, pwdValStr);
 		
 		IDataMap assetDataMap = new IDataMap();
 		assetDataMap.put(NAME, name);
 		assetDataMap.put(PACKAGE_NAME, pkgName);
 		assetDataMap.put(CONNECTION_ENABLED, connEnabled);
 		assetDataMap.put(CONNECTION_ALIAS, connAlias);
-		assetDataMap.put(CONNECTION_CONFIGURATION, connConfigMap.getIData());
+		assetDataMap.put(PWDKEY, pwdValStr);
 		
 		IDataMap inputMap = new IDataMap();
 		
@@ -83,7 +83,7 @@ public final class test
 		
 		NSName serviceNS = NSName.create("wm.client.scaffolding.assets:updateAssetInManifest");
 		try {
-		String msg = "Invoking wm.client.scaffolding.assets:updateAssetInManifest with input new: " + inputMap.getIData();
+		String msg = "Invoking wm.client.scaffolding.assets:updateAssetInManifest with input new2: " + inputMap.getIData();
 		System.out.println(msg);
 		
 		IDataMap logInputMap = new IDataMap();
