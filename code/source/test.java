@@ -35,11 +35,11 @@ public final class test
 		// [i] field:0:required agentId
 		// [i] field:0:optional agentGroup
 		// [i] field:0:required assetType
-		// [i] field:0:required name
-		// [i] field:0:required packageName
-		// [i] field:0:required connectionEnabled
-		// [i] field:0:required connectionAlias
-		// [i] field:0:required pwdVal
+		// [i] field:0:optional name
+		// [i] field:0:optional packageName
+		// [i] field:0:optional connectionEnabled
+		// [i] field:0:optional connectionAlias
+		// [i] field:0:optional pwdVal
 		// [o] field:0:required output
 		String AGENT_ID = "agentId";
 		String AGENT_GROUP = "agentGroup";
@@ -67,11 +67,26 @@ public final class test
 		//		connConfigMap.put(PWDKEY, pwdValStr);
 		
 		IDataMap assetDataMap = new IDataMap();
+		if(name!=null && !name.equals("")){
 		assetDataMap.put(NAME, name);
+		}
+		
+		if(pkgName!=null && !pkgName.equals("")){
 		assetDataMap.put(PACKAGE_NAME, pkgName);
+		}
+		
+		if(connEnabled!=null && !connEnabled.equals("")){
 		assetDataMap.put(CONNECTION_ENABLED, connEnabled);
+		}
+		
+		if(connAlias!=null && !connAlias.equals("")){
 		assetDataMap.put(CONNECTION_ALIAS, connAlias);
+		}
+		
+		if(pwdValStr!=null && !pwdValStr.equals("")){
 		assetDataMap.put(PWDKEY, pwdValStr);
+		}
+		
 		
 		IDataMap inputMap = new IDataMap();
 		

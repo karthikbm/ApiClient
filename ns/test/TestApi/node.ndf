@@ -93,6 +93,7 @@
           <value name="field_name">name</value>
           <value name="field_type">string</value>
           <value name="field_dim">0</value>
+          <value name="field_opt">true</value>
           <array name="field_options" type="value" depth="1">
           </array>
           <value name="nillable">true</value>
@@ -112,6 +113,7 @@
           <value name="field_name">packageName</value>
           <value name="field_type">string</value>
           <value name="field_dim">0</value>
+          <value name="field_opt">true</value>
           <array name="field_options" type="value" depth="1">
           </array>
           <value name="nillable">true</value>
@@ -131,6 +133,7 @@
           <value name="field_name">connectionEnabled</value>
           <value name="field_type">string</value>
           <value name="field_dim">0</value>
+          <value name="field_opt">true</value>
           <array name="field_options" type="value" depth="1">
           </array>
           <value name="nillable">true</value>
@@ -150,6 +153,7 @@
           <value name="field_name">connectionAlias</value>
           <value name="field_type">string</value>
           <value name="field_dim">0</value>
+          <value name="field_opt">true</value>
           <array name="field_options" type="value" depth="1">
           </array>
           <value name="nillable">true</value>
@@ -169,6 +173,7 @@
           <value name="field_name">pwdVal</value>
           <value name="field_type">string</value>
           <value name="field_dim">0</value>
+          <value name="field_opt">true</value>
           <array name="field_options" type="value" depth="1">
           </array>
           <value name="nillable">true</value>
